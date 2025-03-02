@@ -293,6 +293,10 @@ function ProductList() {
     setAddedToCart((prevState) => ({ ...prevState, [product.name]: true }))
     console.log(product.name)
   }
+  const isProductInCart =(product)=>{
+
+    return cart.some((item)=>item.name==product.name)
+  }
 
   // Calculate the total number of items in the cart
   const totalItems = cart.reduce((total, item) => total + item.quantity, 0)
@@ -373,8 +377,9 @@ function ProductList() {
                     <button
                       className="product-button"
                       onClick={() => handleAddToCart(plant)}
+                      disabled= {isProductInCart(plant)}
                     >
-                      Add to Cart
+                      {isProductInCart(plant) ? 'Added to Cart' : 'Add to Cart'}
                     </button>
                   </div>
                 ))}

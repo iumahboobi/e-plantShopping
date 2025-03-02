@@ -65,8 +65,8 @@ body {
     max-width: calc(26.33% - 20px); /* Adjust max-width for 3 cards per row with 20px gap */
     margin-bottom: 20px;
     padding: 20px;
-    background-color: #fff;
-    border: 1px solid #ccc;
+    background-color: #4b4c3f2f;
+    border: 1px solid #751717be;
     border-radius: 5px;
     text-align: center;
     position: relative;
@@ -210,7 +210,18 @@ body {
     transition-duration: 0.4s;
     cursor: pointer;
   }
+  .product-button:disabled {
+    color: #cccccc; /* Gray background for disabled buttons */
+    background-color: #666666; /* Dark gray text */
+    cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+  }
   
+
+  .product-button:disabled:hover {
+    color: #cccccc; /* Gray background for disabled buttons */
+    background-color: #666666; /* Dark gray text */
+    cursor: not-allowed; /* Change cursor to indicate the button is disabled */
+  }
   .product-button:hover {
     background-color: #45a049;
   }
