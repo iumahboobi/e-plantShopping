@@ -21,7 +21,7 @@ const CartItem = ({ onContinueShopping }) => {
 
   
   const handleCheckOut = (e) => {
-    alert('Functionality to be added for Future')
+    alert('Functionality Coming soon !!! ')
   }
 
   // Increment quantity of an item
