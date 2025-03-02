@@ -54,6 +54,7 @@ body {
     color: rgba(255, 255, 255, 0.86);
     background-color: #113d13ef;
     margin-top: 20px;
+    padding: 12px ;
 }
 .product-list {
     display: flex;
